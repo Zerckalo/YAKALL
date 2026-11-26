@@ -1,7 +1,0 @@
-API URL: https://gemprox.vercel.app/api/proxy - без ВПН
-
-https://generativelanguage.googleapis.com/v1beta/openai/chat/completions - напрямую с ВПН
-
-Model: gemini-3.5-flash-lite
-
-
