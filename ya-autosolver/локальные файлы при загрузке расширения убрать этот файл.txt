@@ -1,5 +1,0 @@
-https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
-
-gemini-3.5-flash
-
-AQ.Ab8RN6L9ArkgBBOA0Q1P_UN8aEGlF6Az1mvK39-oeATATRg8tw
