@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font-family: sans-serif; width: 300px; padding: 10px; margin: 0; }
+    label { display: block; margin-top: 8px; font-size: 12px; }
+    .chk { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 2px;
+      padding: 5px;
+      font-size: 12px;
+    }
+    button {
+      margin-top: 8px;
+      width: 100%;
+      padding: 7px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    #save { background: #f0f0f0; border: 1px solid #ccc; color: #222; }
+    #solveNow { background: #1976d2; color: #fff; border: none; font-weight: bold; }
+    #status { margin-top: 6px; font-size: 11px; color: #2e7d32; min-height: 14px; }
+  </style>
+</head>
+<body>
+  <label class="chk">
+    <input type="checkbox" id="enabled" />
+    <span>Включить авто-решение</span>
+  </label>
+  <label class="chk">
+    <input type="checkbox" id="autoSubmit" />
+    <span>Нажимать «Ответить» автоматически</span>
+  </label>
+  <label class="chk">
+    <input type="checkbox" id="autoNext" />
+    <span>Автопереход «Дальше»</span>
+  </label>
+
+  <label>
+    API URL:
+    <input type="text" id="apiUrl" />
+  </label>
+  <label>
+    Model:
+    <input type="text" id="model" />
+  </label>
+  <label>
+    API Key:
+    <input type="password" id="apiKey" placeholder="Вставь ключ вручную" />
+  </label>
+
+  <button id="save">Сохранить</button>
+  <button id="solveNow">Решить текущую страницу</button>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
